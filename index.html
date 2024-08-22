@@ -7,25 +7,83 @@
     <title>Document</title>
 
     <!-- font awesome icons link Start  -->
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media.css">
     <!-- css link End  -->
-    
+
 </head>
 
 <body>
 
+    <div class="container m-5">
+        <div class="event-row">
+
+            <div class="left">
+
+                <!-- 1. single click event start -->
+                <div class="event-container">
+                    <p>This is click Event</p>
+                    <button class="template-btn btn" id="alertBtn">Alert</button>
+                </div>
+                <!-- single click event end  -->
+
+                <!-- 2. double click event  start -->
+                <div class="event-container">
+                    <p id="dblText">This is double click Event</p>
+                    <button class="template-btn btn" id="dblBtn">Double Click</button>
+                </div>
+                <!-- double click event  end -->
+
+                <!-- 3. context menu event  start -->
+                <div class="event-container">
+                    <p id="conText">This is Context Menu Event</p>
+                    <p id="showConText"> </p>
+                    <button class="template-btn btn" id="contextBtn">Right Click </button>
+                </div>
+                <!--  context menu event  end -->
+
+                <!-- 4.  mouse enter event  start -->
+                <div class="event-container"  id="enterBtn" >
+                    <p>Mouse Enter & leave </p>
     
+                    <p>You Can see two changes </p>
+                   
+                </div>
+                <!--  mouse enter event  end -->
+
+
+            </div>
+
+            <div class="right">
+                <!-- single click event start -->
+                <div class="event-container">
+                    <p>This is click Event</p>
+                    <button class="template-btn btn" id="alertBtn">Alert</button>
+                </div>
+                <!-- single click event end  -->
     
+                <!-- double click event  start -->
+                
+                <!-- double click event  end -->
+
+            </div>
+
+
+
+
+        </div>
+    </div>
+
 
 
 
 
     <!-- js script link Stat  -->
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
     <!-- js script link End  -->
 </body>
 
