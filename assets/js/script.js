@@ -52,5 +52,50 @@ $(document).ready(function () {
     $('#circle').css('background-color','red');
     $('#circle').css('border-radius','50%');
   });
+
+// focus event 
+  $('#fname, #lname').on('focus',function(){
+    $('#fname,#lname').css('outline','2px solid salmon');
+    $('#fname, #lname' ).css('border-radius','10px');
+    $('#fname, #lname').css('padding','10px 13px');
+    $('#fname, #lname').css('border','1px solid transparent');
+    $('#lname,#fname').css('background-color','salmon');
+
+  });
+
+// blur event 
+  $('#lname').on('blur',function(){
+
+    $('#lname').css('background-color','red');
+
+  });
+
+  $('#lname').on('select',function(){
+
+    $('#lname').css('background-color','green');
+
+  });
+
+  $('#desh').on('change',function(){
+    var desh = $('#desh').val();
+    $('#country').html(desh);
+    $('#country').css('margin-top','10px');
+    $('#country').css('color','salmon');
+   
+
+  });
+
+//   submit event 
+  $('#submit').on('submit',function(){
+
+   $('#message').html('Thanks For Submission');
+   $("#message").css("background-color", "salmon");
+   $("#message").css("padding", "10px");
+   $("#message").css("color", "white");
+   $("#message").css("text-align", "center");
+   $("#message").css("border-radius", "10px");
+   $("#message").css("transition", "0.3s");
+
+  });
  
 });
